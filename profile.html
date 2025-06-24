@@ -48,27 +48,76 @@
                 
             </div>
         </div>
-        <h1>Contact Us</h1>
+        <div class="profile-container">
+    <h2>My Profile</h2>
 
-  <div class="contact-container">
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <!-- Personal Info Form -->
+    <form class="profile-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+      <label for="phone">Mobile Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required />
 
-      <button type="submit">Submit</button>
+      <button type="submit">Save Info</button>
     </form>
-    
-  </div>
-  <div class="map" width="100%">
-    <h1>Locate us on google map</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.984624837686!2d-73.83626211499309!3d40.76236289760712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2600feab8eaf3%3A0x4a24aa051149d696!2s123%20Main%20St%20%234b%2C%20Queens%2C%20NY%2010001%2C%20USA!5e0!3m2!1sen!2sin!4v1750784892694!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Rewards and Account Overview -->
+    <div class="account-section">
+      <h3>Your Rewards</h3>
+      <p><strong>Gold Tier</strong> – 1,250 pts</p>
+      <p>350 more points to reach <strong>Platinum</strong></p>
+      <button class="view-rewards">View Rewards</button>
+
+      <h3>Account Overview</h3>
+      <p><strong>Member Since:</strong> March 2021</p>
+      <p><strong>Total Orders:</strong> 14</p>
+      <p><strong>Loyalty Points:</strong> 1,250</p>
     </div>
+
+    <!-- Default Address -->
+    <div class="address-section">
+      <h3>Default Shipping Address</h3>
+      <address>
+        Sarah Johnson<br/>
+        123 Main Street, Apt 4B<br/>
+        New York, NY 10001<br/>
+        United States<br/>
+        (212) 555-1234
+      </address>
+      <button class="edit-address">Edit Address</button>
+    </div>
+
+    <!-- Recent Orders -->
+    <div class="orders-section">
+      <h3>Recent Orders</h3>
+      <table class="orders-table">
+        <thead>
+          <tr>
+            <th>Order</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Total</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#STH-78945</td>
+            <td>June 12, 2023</td>
+            <td>Delivered</td>
+            <td>$120.00</td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#">View all orders</a>
+    </div>
+  </div>
+
          <!-- footerr -->
         <div class="footer">
         <div class="footer-container">
